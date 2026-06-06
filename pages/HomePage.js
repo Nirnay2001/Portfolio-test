@@ -27,7 +27,7 @@ export class HomePage {
     async timelineIsVisible() {
         await expect.soft(this.timeline).toBeVisible();
         const timelineCount = await this.timeline.textContent();
-        await expect.soft(this.timeline).toHaveText('2022 - Now');
+        await expect.soft(this.timeline).toHaveText('2022 – Now');
     }
     async awsGridIsVisible() {
         await expect.soft(this.awsGrid).toBeVisible();
