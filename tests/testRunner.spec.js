@@ -2,14 +2,14 @@ import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 
 test('has title', async ({ page }) => {
-  await page.goto('http://3.84.207.36/');
+  await page.goto('http://18.234.209.76/');
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/QA Engineer Portfolio/);
 });
 
 test('home page should have all the sections visible', async ({ page }) => {
-    await page.goto('http://3.84.207.36/');
+    await page.goto('http://18.234.209.76/');
     const homePage = new HomePage(page);
     await homePage.logoIsVisible();
     await homePage.navlinksIsVisible();
